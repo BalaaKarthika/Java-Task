@@ -1,8 +1,12 @@
-public class Reverse{
-public static void main(String[] args){
-int n=100;
-for(int i=n; i>=1;i--)
-{
-System.out.println(i);
+public class Reverse {
+    public static void main(String[] args) {
+        int number = 1234;
+        int reversed = 0;
+        while (number != 0) {
+            int digit = number % 10;
+            reversed = reversed * 10 + digit;
+            number = number / 10; 
+	System.out.println("Reversed number: " + reversed); 
+    }
 }
-}}
+
